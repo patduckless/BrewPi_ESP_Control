@@ -1,0 +1,12 @@
+{
+    "domain": "bewpi_esp_control",
+    "name": "BrewPi ESP Control",
+    "version": "1.0.0",
+    "documentation": "https://github.com/patduckless/Brewpi_ESP_Control",
+    "requirements": ["voluptuous"],
+    "dependencies": [],
+    "codeowners": ["@patduckless"],
+    "iot_class": "local_polling",
+    "supported_platforms": ["sensor", "select"],
+    "config_flow": true
+}
