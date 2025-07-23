@@ -1,4 +1,4 @@
-MODE_CONTROLS = {
+ALL_CONTROLS = {
     "mode": {
         "name": "Controller Mode",
         "options": {
@@ -6,10 +6,7 @@ MODE_CONTROLS = {
             "b": "Beer constant mode",
             "f": "Fridge constant mode",
         }
-    }
-}
-
-SETPOINT_CONTROLS = {
+    },
     "beerSet": {
         "name": "Beer Setpoint",
         "unit": "°C",

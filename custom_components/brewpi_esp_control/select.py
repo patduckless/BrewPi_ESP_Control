@@ -9,14 +9,14 @@ from homeassistant.helpers.entity import EntityCategory
 import aiohttp
 import logging
 
-from .control_consts import MODE_CONTROLS
+from .control_consts import ALL_CONTROLS
 
 DOMAIN = "bewpi_esp_control"
 
 async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry, async_add_entities: AddEntitiesCallback):
     ip_address = entry.data.get("ip_address")
     entities = []
-    for control_key, control in MODE_CONTROLS.items():
+    for control_key, control in ALL_CONTROLS.items():
         options_dict = control.get("options", {})
         entities.append(BrewPiControlSelect(ip_address, control_key, control["name"], options_dict))
     async_add_entities(entities)
