@@ -1,6 +1,7 @@
 ALL_CONTROLS = {
     "mode": {
         "name": "Controller Mode",
+        "type": "select",
         "options": {
             "o": "Off",
             "b": "Beer constant mode",
@@ -9,6 +10,7 @@ ALL_CONTROLS = {
     },
     "beerSet": {
         "name": "Beer Setpoint",
+        "type": "number",
         "unit": "°C",
         "min": 0.0,
         "max": 30.0,
@@ -16,6 +18,7 @@ ALL_CONTROLS = {
     },
     "fridgeSet": {
         "name": "Fridge Setpoint",
+        "type": "number",
         "unit": "°C",
         "min": 0.0,
         "max": 30.0,
