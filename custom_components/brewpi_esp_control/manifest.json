@@ -7,6 +7,6 @@
     "dependencies": [],
     "codeowners": ["@patduckless"],
     "iot_class": "local_polling",
-    "supported_platforms": ["sensor"],
+    "supported_platforms": ["sensor", "select", "number"],
     "config_flow": true
 }
